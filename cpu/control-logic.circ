@@ -411,10 +411,6 @@
       <a name="value" val="0x37"/>
       <a name="width" val="7"/>
     </comp>
-    <comp lib="0" loc="(130,1390)" name="Constant">
-      <a name="value" val="0x63"/>
-      <a name="width" val="7"/>
-    </comp>
     <comp lib="0" loc="(1400,1070)" name="Tunnel">
       <a name="label" val="sub"/>
     </comp>
@@ -829,9 +825,6 @@
     <comp lib="0" loc="(200,1310)" name="Tunnel">
       <a name="label" val="U_type_imm"/>
     </comp>
-    <comp lib="0" loc="(200,1380)" name="Tunnel">
-      <a name="label" val="B_type"/>
-    </comp>
     <comp lib="0" loc="(200,210)" name="Pin">
       <a name="facing" val="south"/>
       <a name="label" val="BrEq"/>
@@ -1245,15 +1238,10 @@
     <comp lib="1" loc="(2130,1610)" name="AND Gate"/>
     <comp lib="1" loc="(2230,1750)" name="NOT Gate"/>
     <comp lib="1" loc="(2310,1760)" name="AND Gate"/>
-    <comp lib="1" loc="(2380,1440)" name="OR Gate">
-      <a name="inputs" val="4"/>
-    </comp>
     <comp lib="1" loc="(2390,1700)" name="OR Gate">
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="1" loc="(2410,1320)" name="OR Gate">
-      <a name="inputs" val="9"/>
-    </comp>
+    <comp lib="1" loc="(2410,1300)" name="OR Gate"/>
     <comp lib="1" loc="(510,1130)" name="AND Gate"/>
     <comp lib="1" loc="(510,1270)" name="AND Gate"/>
     <comp lib="1" loc="(510,1440)" name="AND Gate"/>
@@ -1359,9 +1347,6 @@
       <a name="width" val="7"/>
     </comp>
     <comp lib="3" loc="(180,1310)" name="Comparator">
-      <a name="width" val="7"/>
-    </comp>
-    <comp lib="3" loc="(180,1380)" name="Comparator">
       <a name="width" val="7"/>
     </comp>
     <comp lib="3" loc="(500,1030)" name="Comparator">
@@ -1533,7 +1518,6 @@
     <wire from="(130,1180)" to="(140,1180)"/>
     <wire from="(130,1250)" to="(140,1250)"/>
     <wire from="(130,1320)" to="(140,1320)"/>
-    <wire from="(130,1390)" to="(140,1390)"/>
     <wire from="(1300,1090)" to="(1320,1090)"/>
     <wire from="(1300,1350)" to="(1320,1350)"/>
     <wire from="(1300,1990)" to="(1320,1990)"/>
@@ -1672,7 +1656,6 @@
     <wire from="(180,1170)" to="(200,1170)"/>
     <wire from="(180,1240)" to="(200,1240)"/>
     <wire from="(180,1310)" to="(200,1310)"/>
-    <wire from="(180,1380)" to="(200,1380)"/>
     <wire from="(1820,900)" to="(1820,1760)"/>
     <wire from="(1820,900)" to="(2300,900)"/>
     <wire from="(1910,1790)" to="(1940,1790)"/>
@@ -1811,19 +1794,25 @@
     <wire from="(2250,1310)" to="(2260,1310)"/>
     <wire from="(2250,1750)" to="(2250,1780)"/>
     <wire from="(2250,1780)" to="(2260,1780)"/>
-    <wire from="(2260,1290)" to="(2260,1310)"/>
-    <wire from="(2260,1290)" to="(2360,1290)"/>
+    <wire from="(2260,1310)" to="(2260,1320)"/>
+    <wire from="(2260,1320)" to="(2360,1320)"/>
     <wire from="(2260,1720)" to="(2260,1740)"/>
-    <wire from="(2290,1420)" to="(2330,1420)"/>
+    <wire from="(2290,1420)" to="(2320,1420)"/>
     <wire from="(2300,880)" to="(2300,900)"/>
     <wire from="(2310,1760)" to="(2320,1760)"/>
+    <wire from="(2320,1420)" to="(2320,1430)"/>
+    <wire from="(2320,1430)" to="(2390,1430)"/>
     <wire from="(2320,1720)" to="(2320,1760)"/>
     <wire from="(2320,1720)" to="(2340,1720)"/>
     <wire from="(2340,1630)" to="(2340,1680)"/>
     <wire from="(2340,1700)" to="(2340,1710)"/>
-    <wire from="(2380,1440)" to="(2420,1440)"/>
+    <wire from="(2380,1440)" to="(2390,1440)"/>
+    <wire from="(2390,1430)" to="(2390,1440)"/>
+    <wire from="(2390,1440)" to="(2420,1440)"/>
     <wire from="(2390,1700)" to="(2410,1700)"/>
-    <wire from="(2410,1320)" to="(2430,1320)"/>
+    <wire from="(2410,1300)" to="(2420,1300)"/>
+    <wire from="(2420,1300)" to="(2420,1320)"/>
+    <wire from="(2420,1320)" to="(2430,1320)"/>
     <wire from="(250,210)" to="(250,230)"/>
     <wire from="(270,230)" to="(280,230)"/>
     <wire from="(280,100)" to="(280,230)"/>
@@ -1952,8 +1941,6 @@
     <wire from="(90,1230)" to="(140,1230)"/>
     <wire from="(90,1230)" to="(90,1300)"/>
     <wire from="(90,1300)" to="(140,1300)"/>
-    <wire from="(90,1300)" to="(90,1370)"/>
-    <wire from="(90,1370)" to="(140,1370)"/>
     <wire from="(900,230)" to="(920,230)"/>
     <wire from="(920,150)" to="(920,230)"/>
   </circuit>
