@@ -5,7 +5,6 @@
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="appear" val="center"/>
-      <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </tool>
@@ -1254,9 +1253,6 @@
       <a name="label" val="WBSel"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="0" loc="(720,1760)" name="Tunnel">
-      <a name="label" val="slli"/>
-    </comp>
     <comp lib="0" loc="(730,210)" name="Pin">
       <a name="facing" val="south"/>
       <a name="label" val="ALUSel"/>
@@ -1268,6 +1264,9 @@
       <a name="facing" val="north"/>
       <a name="label" val="ALUSel"/>
       <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(740,1760)" name="Tunnel">
+      <a name="label" val="slli"/>
     </comp>
     <comp lib="0" loc="(80,1090)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1398,7 +1397,7 @@
     <comp lib="1" loc="(580,1740)" name="AND Gate"/>
     <comp lib="1" loc="(580,1870)" name="AND Gate"/>
     <comp lib="1" loc="(580,980)" name="AND Gate"/>
-    <comp lib="1" loc="(710,1760)" name="AND Gate"/>
+    <comp lib="1" loc="(720,1760)" name="AND Gate"/>
     <comp lib="1" loc="(800,1960)" name="AND Gate"/>
     <comp lib="1" loc="(810,1880)" name="AND Gate"/>
     <comp lib="2" loc="(1370,2860)" name="Multiplexer">
@@ -2141,7 +2140,7 @@
     <wire from="(580,1290)" to="(600,1290)"/>
     <wire from="(580,1460)" to="(600,1460)"/>
     <wire from="(580,1600)" to="(600,1600)"/>
-    <wire from="(580,1740)" to="(660,1740)"/>
+    <wire from="(580,1740)" to="(670,1740)"/>
     <wire from="(580,1790)" to="(610,1790)"/>
     <wire from="(580,1870)" to="(600,1870)"/>
     <wire from="(580,980)" to="(600,980)"/>
@@ -2160,6 +2159,7 @@
     <wire from="(640,230)" to="(650,230)"/>
     <wire from="(650,1800)" to="(660,1800)"/>
     <wire from="(660,1780)" to="(660,1800)"/>
+    <wire from="(660,1780)" to="(670,1780)"/>
     <wire from="(670,2010)" to="(680,2010)"/>
     <wire from="(670,210)" to="(670,230)"/>
     <wire from="(680,1970)" to="(690,1970)"/>
@@ -2177,7 +2177,7 @@
     <wire from="(690,1910)" to="(690,1930)"/>
     <wire from="(690,1910)" to="(700,1910)"/>
     <wire from="(690,230)" to="(710,230)"/>
-    <wire from="(710,1760)" to="(720,1760)"/>
+    <wire from="(720,1760)" to="(740,1760)"/>
     <wire from="(730,1980)" to="(750,1980)"/>
     <wire from="(730,210)" to="(730,230)"/>
     <wire from="(740,1900)" to="(760,1900)"/>
