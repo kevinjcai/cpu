@@ -490,18 +490,22 @@
       <a name="label" val="ProgramCounter"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(2050,450)" name="Tunnel">
-      <a name="label" val="MemWriteData"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(2070,630)" name="Tunnel">
+    <comp lib="0" loc="(2020,640)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="ALUResult"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(2100,590)" name="Tunnel">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(2030,800)" name="Tunnel">
+      <a name="facing" val="east"/>
       <a name="label" val="pc"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(2050,450)" name="Tunnel">
+      <a name="label" val="MemWriteData"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(2050,830)" name="Constant">
+      <a name="value" val="0x4"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(2150,650)" name="Tunnel">
@@ -762,6 +766,9 @@
     <comp lib="3" loc="(120,460)" name="Adder">
       <a name="width" val="32"/>
     </comp>
+    <comp lib="3" loc="(2110,820)" name="Adder">
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="4" loc="(230,500)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="PC"/>
@@ -886,13 +893,22 @@
     <wire from="(200,240)" to="(380,240)"/>
     <wire from="(200,70)" to="(200,130)"/>
     <wire from="(200,70)" to="(590,70)"/>
+    <wire from="(2020,630)" to="(2020,640)"/>
+    <wire from="(2020,630)" to="(2070,630)"/>
     <wire from="(2030,430)" to="(2180,430)"/>
     <wire from="(2030,450)" to="(2050,450)"/>
+    <wire from="(2030,800)" to="(2060,800)"/>
     <wire from="(2040,550)" to="(2130,550)"/>
+    <wire from="(2050,830)" to="(2070,830)"/>
+    <wire from="(2060,800)" to="(2060,810)"/>
+    <wire from="(2060,810)" to="(2070,810)"/>
     <wire from="(2070,560)" to="(2070,630)"/>
     <wire from="(2070,560)" to="(2130,560)"/>
-    <wire from="(2100,570)" to="(2100,590)"/>
+    <wire from="(2100,570)" to="(2100,710)"/>
     <wire from="(2100,570)" to="(2130,570)"/>
+    <wire from="(2100,710)" to="(2120,710)"/>
+    <wire from="(2110,820)" to="(2120,820)"/>
+    <wire from="(2120,710)" to="(2120,820)"/>
     <wire from="(2150,590)" to="(2150,650)"/>
     <wire from="(2170,570)" to="(2190,570)"/>
     <wire from="(220,570)" to="(230,570)"/>
