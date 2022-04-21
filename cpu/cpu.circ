@@ -408,7 +408,7 @@
     </comp>
     <comp lib="0" loc="(1680,430)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Instruction"/>
+      <a name="label" val="Inst"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1680,470)" name="Tunnel">
@@ -441,7 +441,7 @@
     </comp>
     <comp lib="0" loc="(1810,550)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Instruction"/>
+      <a name="label" val="Inst"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1810,590)" name="Tunnel">
@@ -485,27 +485,27 @@
       <a name="output" val="true"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(1950,810)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="pc"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1960,830)" name="Constant">
+      <a name="value" val="0x4"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(200,150)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="ProgramCounter"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(2020,640)" name="Tunnel">
+    <comp lib="0" loc="(2030,640)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="ALUResult"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(2030,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="pc"/>
-      <a name="width" val="32"/>
-    </comp>
     <comp lib="0" loc="(2050,450)" name="Tunnel">
       <a name="label" val="MemWriteData"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(2050,830)" name="Constant">
-      <a name="value" val="0x4"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(2150,650)" name="Tunnel">
@@ -766,7 +766,7 @@
     <comp lib="3" loc="(120,460)" name="Adder">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="3" loc="(2110,820)" name="Adder">
+    <comp lib="3" loc="(2060,820)" name="Adder">
       <a name="width" val="32"/>
     </comp>
     <comp lib="4" loc="(230,500)" name="Register">
@@ -846,6 +846,7 @@
     <wire from="(1320,190)" to="(1320,220)"/>
     <wire from="(1340,210)" to="(1390,210)"/>
     <wire from="(140,460)" to="(140,510)"/>
+    <wire from="(140,460)" to="(150,460)"/>
     <wire from="(140,510)" to="(150,510)"/>
     <wire from="(140,530)" to="(140,540)"/>
     <wire from="(140,530)" to="(150,530)"/>
@@ -888,27 +889,23 @@
     <wire from="(1850,130)" to="(1880,130)"/>
     <wire from="(190,520)" to="(190,530)"/>
     <wire from="(190,530)" to="(230,530)"/>
+    <wire from="(1950,810)" to="(2020,810)"/>
+    <wire from="(1960,830)" to="(2020,830)"/>
     <wire from="(200,150)" to="(250,150)"/>
     <wire from="(200,170)" to="(200,240)"/>
     <wire from="(200,240)" to="(380,240)"/>
     <wire from="(200,70)" to="(200,130)"/>
     <wire from="(200,70)" to="(590,70)"/>
-    <wire from="(2020,630)" to="(2020,640)"/>
-    <wire from="(2020,630)" to="(2070,630)"/>
     <wire from="(2030,430)" to="(2180,430)"/>
     <wire from="(2030,450)" to="(2050,450)"/>
-    <wire from="(2030,800)" to="(2060,800)"/>
+    <wire from="(2030,630)" to="(2030,640)"/>
+    <wire from="(2030,630)" to="(2070,630)"/>
     <wire from="(2040,550)" to="(2130,550)"/>
-    <wire from="(2050,830)" to="(2070,830)"/>
-    <wire from="(2060,800)" to="(2060,810)"/>
-    <wire from="(2060,810)" to="(2070,810)"/>
+    <wire from="(2060,820)" to="(2100,820)"/>
     <wire from="(2070,560)" to="(2070,630)"/>
     <wire from="(2070,560)" to="(2130,560)"/>
-    <wire from="(2100,570)" to="(2100,710)"/>
+    <wire from="(2100,570)" to="(2100,820)"/>
     <wire from="(2100,570)" to="(2130,570)"/>
-    <wire from="(2100,710)" to="(2120,710)"/>
-    <wire from="(2110,820)" to="(2120,820)"/>
-    <wire from="(2120,710)" to="(2120,820)"/>
     <wire from="(2150,590)" to="(2150,650)"/>
     <wire from="(2170,570)" to="(2190,570)"/>
     <wire from="(220,570)" to="(230,570)"/>
@@ -920,6 +917,7 @@
     <wire from="(320,530)" to="(340,530)"/>
     <wire from="(380,240)" to="(380,260)"/>
     <wire from="(380,260)" to="(590,260)"/>
+    <wire from="(500,950)" to="(580,950)"/>
     <wire from="(520,200)" to="(590,200)"/>
     <wire from="(580,540)" to="(690,540)"/>
     <wire from="(590,220)" to="(590,260)"/>
